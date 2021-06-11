@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'great';
+    src: url(/static/fonts/GreatVibes-Regular.otf);
+}
+@font-face {
+    font-family: 'myriad';
+    src: url(/static/fonts/Myriad.OTF);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'myriad';
+}
+.outer-wrapper {
+    width: 1300px;
+    height: 922px;
+    background: url(/static/images/back.jpg);
+    background-size: cover;
+    position: relative;
+}
+.name {
+    position: relative;
+    font-family: great;
+    font-size: 80px;
+    top: 370px;
+    text-align: center;
+}
+.text {
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    font-size: 22px;
+    top: 395px;
+    width: 70%;
+}
+.bold {
+    font-weight: 600;
+}
+.certi-id {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    font-family: monospace;
+    font-size: 20px;
+}

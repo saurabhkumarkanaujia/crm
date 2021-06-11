@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM</title>
+{% include 'web-css.html' %}
+<style type="text/css">
+	
+</style>
+</head> 
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="tbl-header ">
+                    <table class="w-100 p-3" ellpadding="0" cellspacing="0" border="0">
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for data in c_data %}
+                            <tr>
+                                <td>{{forloop.counter}}</td>
+                                <td>{{data.name}}</td>
+                            </tr>
+                            {% endfor %} 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <a href="{% url 'add_person' %}" class="btn btn-success">Add Person</a>
+            </div>
+        </div>
+    </div>
+{% include 'web-js.html' %}
+</body>
+</html>           

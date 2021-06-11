@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    {% include 'web-css.html' %}
+</head>
+<body>
+    {{ cert_details.id }}
+    <div class="outer-wrapper">
+        <span id="certificate-id" class="certi-id">Certificate No. : CN21/00001</span>
+        <div class="name" id="name">Nandini Kumari</div>
+        <div class="text">student of <span id="college-name" class="bold">Jaipuria Institute of Management, Noida</span>, has successfully completed her <span id="department" class="bold">Web Development</span> internship with Apnelog NGO during the period <span id="start-date" class="bold">8th July, 2020</span> - <span id="end-date" class="bold">20th October, 2020</span>.<br/><br/>We wish her all the very best for her future endeavours.</div>
+    </div>
+</body>
+</html>
